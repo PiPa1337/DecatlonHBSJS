@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decatlon Trelew</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a class="navbar-brand" href="/">
+                    <img src="./img/Decatlon-logos_white.png" alt="" height="64">
+                </a>
+                <ul class="nav col-auto col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/" class="nav-link px-2 text-white">Inicio</a></li>
+                    <li><a href="/nosotros" class="nav-link px-2 text-white">Nosotros</a></li>
+                    <li><a href="/contacto" class="nav-link pl-2 text-secondary">Contacto</a></li>
+                    <li><a href="/servicios" class="nav-link pr-2 text-white">Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- -->
+    <form action="./contacto" method="post" class="p-5 m-5">
+        <h1 class="align-items-center justify-content-center">Ponte en contacto con nosotros via mail y recibe un descuento de 5%</h1>
+        <div class="mb-3">
+            <label for="dirEmail" class="form-label">Dirección de Email</label>
+            <input type="email" class="form-control" name="dirEmail" id="dirEmail" aria-describedby="dirEmail">
+        </div>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Acepto los <a href="/terminos-y-condiciones">términos & Condiciones</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="text-center">
+        <h2 class="text-danger">
+            {{ Error }}
+            {{ SinError }}
+        </h2>
+    </div>
+    </form>
+
+    <!-- -->
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 p-5 my-5 border-top">
+        <div class="col mb-3 px-5">
+            <a href="/"
+                class="d-flex m-0 justify-content-center align-items-center mb-3 link-dark text-decoration-none">
+                <img src="./img/Decatlon-logos_black.png" height="64">
+            </a>
+            <p class="text-muted">© 2022 DECATLON™. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+        <div class="col mb-3">
+
+        </div>
+        <div class="col mb-3">
+            <h5>SEGUINOS</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a
+                        href="https://www.facebook.com/groups/1760235530934242/user/100005945975237/"
+                        class="nav-link p-0 text-muted">Facebook</a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/gimnasio.decatlon/"
+                        class="nav-link p-0 text-muted">Instagram</a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a
+                        href="https://www.google.com/maps/place/Gimnasio+Decatlon/@-43.2549809,-65.3102745,15.75z/data=!4m5!3m4!1s0xbe0144c7dc000adf:0x1b9cce859773f95d!8m2!3d-43.2548268!4d-65.307446?shorturl=1"
+                        class="nav-link p-0 text-muted">Google Maps</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>LEGAL</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a href="/terminos-y-condiciones"
+                        class="nav-link p-0 text-muted">Términos & Condiciones</a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">0280 15-467-6169</a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Rivadavia 548, Trelew, Provincia del
+                        Chubut, Argentina</a></li>
+                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"> </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+<script src="./js/scripts.js"></script>
+
+</html>
